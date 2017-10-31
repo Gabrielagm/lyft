@@ -6,27 +6,31 @@
   - Texto del formulario: `#728099`
   - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
  */
+
 body{
     margin:0;
     padding:0;
     font-family: 'Montserrat', sans-serif;
-
+    box-sizing:border-box;
 }
 
 /*container1*/
-#container1{
+#header{
     background-image:url(../assets/images/hero.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
+    box-sizing:border-box;
+    padding-bottom:10%;
+   
 }
-/*box-container1*/
+
 .box-container1{
     max-width:40%;
     background:#fff;
     transform:translateX(130%);
     padding:3%;
-     color:#352384;
+    color:#352384;
 }
 
 .box-container1 input{
@@ -80,4 +84,62 @@ button{
 .box-container1-extra  a{
     color:#6d268a;
     text-decoration:underline;
+}
+/*container2*/
+
+.container2-first, .container2-second{
+    display:inline-block;
+    margin:0;
+    width:50%;
+    height:50%;
+    float:left;
+    background-color:#5e2482;
+    color:#fff;
+    box-sizing:border-box;
+}
+.container2-first{
+    padding:8%;   
+}
+
+.container2-second{
+    padding-top:8.7%;
+}
+.container2-second img{ 
+  max-width:80%;
+}
+
+.container2-first-item h3{
+    font-size:200%;
+}
+.container2-first p{
+    text-align:left;
+}
+
+.container2-first-item-h3{
+    line-height:1.5%;
+}
+
+
+/**/
+#container3{
+    clear:both;
+     box-sizing:border-box; 
+}
+.container3-content{
+    max-width:30%;
+  display:inline-block;
+  float:left;
+  text-align:center;
+  padding-top:7%;
+
+  
+}
+.container3-video{
+    max-width:70%;
+    display:inline-block;
+     
+} 
+
+.container3-video iframe{
+    width:1000px;
 }
