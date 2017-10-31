@@ -149,8 +149,8 @@ button{
 
 .contenedor-footer{
     background-color: blue;
-   width: 100%;
-   height: auto;    
+   width: 2500px;
+   height: 500px;    
    position: relative;  
 
 }
@@ -209,7 +209,8 @@ width: 10px;
     display: inline-block;
     outline: 3px solid rgb(180, 12, 12);
     position: absolute;
-    left: 60%;
+    left: 50%;
+    top:5%;
     
 }
 
