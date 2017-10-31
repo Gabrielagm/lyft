@@ -1,3 +1,83 @@
 /*
  * Estilos de tu proyecto
+ Botones, hover: `#FF00BF`
+  - Fondo de `footer`: `#333447`
+  - Título del formulario: `#352384`
+  - Texto del formulario: `#728099`
+  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
  */
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*container1*/
+#container1{
+    background-image:url(../assets/images/hero.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*box-container1*/
+.box-container1{
+    max-width:40%;
+    background:#fff;
+    transform:translateX(130%);
+    padding:3%;
+     color:#352384;
+}
+
+.box-container1 input{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid #352384;
+    background:#fff;
+    margin-bottom:5px;
+    font-family: 'Montserrat', sans-serif;
+    width:85%;
+}
+.box-container1 h1{
+   
+    font-size:250%;
+    line-height:70%;
+    
+}
+
+button{
+    background:#ff00bf;
+    line-height:3;
+    border:none;
+    border-radius:5%; 
+}
+
+.box-container1-p{
+    transform:translateX(10%);
+}
+.box-container1-button a{
+    color:#fff;
+    text-decoration:none;
+}
+.box-container1-button{
+    display:block;
+    float:left;
+}
+.box-container1-p a:hover{
+    color:#ff00bf;
+}
+.box-container1-extra{
+    clear:both;
+    font-size:70%;
+    line-height:2.5;
+    padding-top:5%;
+}
+.box-container1-extra  a{
+    color:#ff00bf;
+}
+
+.box-container1-extra  a{
+    color:#6d268a;
+    text-decoration:underline;
+}
