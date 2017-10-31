@@ -14,6 +14,7 @@ body{
     box-sizing:border-box;
 }
 
+<<<<<<< HEAD
 /*container1*/
 #header{
     background-image:url(../assets/images/hero.gif);
@@ -26,11 +27,90 @@ body{
 }
 
 .box-container1{
+=======
+#header{
+    background-image: url(../assets/images/hero.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:600px;
+    
+       
+}
+
+nav{
+  position: fixed;
+  top:0%;
+  width: 100%;
+  padding: 2%;
+  z-index: 10000;
+  
+}
+
+
+.img-main{
+   width: 70px;
+   height: 50px;
+
+   display: inline-block;
+   margin-left: 5%;
+}
+
+.list-main{
+   list-style: none;
+  /* outline: 2px solid red;*/
+   position: absolute;
+   top:0%;
+   left:50%;
+   width: 60%;
+   
+}
+
+.list-main li{
+   display:inline-block;
+   font-size: 25px;
+  margin: 4%;
+ 
+ color: white;
+  
+
+}
+
+.button-main{
+box-sizing: border-box;
+font-size: 25px;
+border-radius: 8px;
+border: 1px solid #fff;
+outline: none;
+background-color: transparent;
+padding: 5%;
+width: 100px;
+color: white;
+
+}
+
+.enlace-main{
+text-decoration: none;
+color: white;
+
+}
+
+
+
+/*container1*/
+
+/*.box-container1{
+>>>>>>> 0ecdb0ca3b598213a09b1df2d64ff2fd39674a07
     max-width:40%;
     background:#fff;
     transform:translateX(130%);
     padding:3%;
+<<<<<<< HEAD
     color:#352384;
+=======
+     color:#352384;
+   position: absolute;
+    top: 20%;
+>>>>>>> 0ecdb0ca3b598213a09b1df2d64ff2fd39674a07
 }
 
 .box-container1 input{
@@ -142,4 +222,75 @@ button{
 
 .container3-video iframe{
     width:1000px;
+*/
+
+.contenedor-footer{
+    background-color: blue;
+   width: 2500px;
+   height: 500px;    
+   position: relative;  
+
+}
+
+.footer {
+line-height: 30px;
+list-style: none;
+font-weight: bold;
+color:white;
+outline: 3px solid rgb(26, 2, 2);
+position: absolute;
+left: 10%;
+top:5%;
+
+
+}
+
+
+
+
+.footer-1{
+    line-height: 30px;
+    list-style: none;
+    font-weight: bold;
+    color:white;
+    outline: 3px solid rgb(26, 2, 2);
+    position: absolute;
+    left: 26%;
+    top:5%;
+}
+
+.footer-2 {
+    line-height: 30px;
+    list-style: none;
+    font-weight: bold;
+    color:white;
+    outline: 3px solid rgb(26, 2, 2);
+    position: absolute;
+    left: 46%;
+    top:5%;
+}
+
+/*
+
+ figure {
+left: 50%;
+display: inline-block;
+
+}
+.foot-img{
+display:inline-block;
+width: 10px;
+}*/
+
+.footer-3{
+    display: inline-block;
+    outline: 3px solid rgb(180, 12, 12);
+    position: absolute;
+    left: 50%;
+    top:5%;
+    
+}
+
+figure img{
+    width: 100px;
 }
