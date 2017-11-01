@@ -5,7 +5,7 @@
 
 Replicar la siguiente página web:
 
-![Lyft Website](assets/docs/fullpage.png)
+![Lyft Website](docs/fullpage.png)
 
 También se bridó la imágen del footer, para poder replicarlo a detalle:
 
