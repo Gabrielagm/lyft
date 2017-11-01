@@ -8,7 +8,55 @@ body{
     padding:0;
     font-family: 'Montserrat', sans-serif;
 }
-/*AQUÍ VENDRÍA EL NAV*/
+/*código para <nav>*/
+
+nav {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10000;
+    height: 20%;
+   
+}
+
+.img-main {
+    width: 70px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.list-main {
+    list-style: none;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 60%;
+}
+
+.list-main li {
+    display: inline-block;
+    font-size: 25px;
+    margin: 4%;
+    color: white;
+}
+
+.button-main {
+    box-sizing: border-box;
+    font-size: 25px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    padding: 5%;
+    width: 100px;
+    color: white;
+}
+
+.enlace-main {
+    text-decoration: none;
+    color: white;
+}
 
 /*código de container1*/
 /*Padre: id:container1  hijo directo:class="container1-form"*/
@@ -17,6 +65,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
+    padding-top:10%;    
 }
 /*se posiciona .container1-form al lado derecho con position absolute, para lo cual se posiciona al padre con
 position relative*/
