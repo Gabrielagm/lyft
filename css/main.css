@@ -1,145 +1,253 @@
-/*
- * Estilos de tu proyecto
- Botones, hover: `#FF00BF`
-  - Fondo de `footer`: `#333447`
-  - Título del formulario: `#352384`
-  - Texto del formulario: `#728099`
-  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
- */
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 body{
     margin:0;
     padding:0;
     font-family: 'Montserrat', sans-serif;
-    box-sizing:border-box;
 }
+/*AQUÍ VENDRÍA EL NAV*/
 
-/*container1*/
+/*código de container1*/
+/*Padre: id:container1  hijo directo:class="container1-form"*/
 #header{
     background-image:url(../assets/images/hero.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
-    box-sizing:border-box;
-    padding-bottom:10%;
-   
+    background-position: center center;
 }
-
-.box-container1{
-    max-width:40%;
-    background:#fff;
-    transform:translateX(130%);
-    padding:3%;
+/*se posiciona .container1-form al lado derecho con position absolute, para lo cual se posiciona al padre con
+position relative*/
+#container1{
+    width:100%;
+    height:27rem;
     color:#352384;
+    position:relative;
 }
 
-.box-container1 input{
+.container1-form{
+    width:42%;
+    padding:5%;
+    background:#fff;
+    position:absolute;
+    right:0; 
+    line-height:300%;
+}
+
+.container1-form h1{
+    font-size:250%;
+    font-weight:600;   
+}
+
+.container1-form p{
+    font-size:0.875rem;
+    letter-spacing:0.15em;
+}
+/*solo se conserva border-botton para lograr replicar el modelo*/
+input{
     border-top:none;
     border-left:none;
     border-right:none;
     border-bottom:1px solid #352384;
-    background:#fff;
-    margin-bottom:5px;
-    font-family: 'Montserrat', sans-serif;
-    width:85%;
-}
-.box-container1 h1{
-   
-    font-size:250%;
-    line-height:70%;
-    
+    width:100%;
+    font-family:inherit;
+    font-size:100%; 
 }
 
-button{
+/*para cambiar el color de placeholder y pueda ser reconocido por todos los navegadores*/	
+:-ms-input-placeholder { color: #c3cbdc; }
+::-webkit-input-placeholder { color:#c3cbdc; } 
+::-moz-placeholder { color: #c3cbdc; }
+:-moz-placeholder { color: #c3cbdc; }  
+/*el botón se creó usando <input>, se usó la propiedad cursor: pointer(valor) para que aparezca el puntero
+característico*/
+.form-button{
     background:#ff00bf;
-    line-height:3;
+    font-family: inherit;
+    font-size:100%;
+    font-weight:500;
+    color:#fff;
     border:none;
-    border-radius:5%; 
+    border-radius:9%;
+    cursor: pointer;
+    line-height:330%;
+    width:40%;
+    margin-right:5%;
 }
 
-.box-container1-p{
-    transform:translateX(10%);
+.form-content a{
+    color:#77859d;
 }
-.box-container1-button a{
-    color:#fff;
+/*se usa la pseudoclase hover para definir el color*/
+.form-content a:hover{
+    color:#ff00bf;
+}
+
+.form-notes{
+    font-size: 0.6rem;
+    line-height:200%;
+    color:#728099;
+    padding-top:3%
+}
+
+.form-notes a{
+    color:#ff00bf;
     text-decoration:none;
 }
-.box-container1-button{
-    display:block;
-    float:left;
-}
-.box-container1-p a:hover{
-    color:#ff00bf;
-}
-.box-container1-extra{
-    clear:both;
-    font-size:70%;
-    line-height:2.5;
-    padding-top:5%;
-}
-.box-container1-extra  a{
-    color:#ff00bf;
-}
-
-.box-container1-extra  a{
-    color:#6d268a;
+/*con la pseudoclase hover también definimos la aparición del subrayado al pasar el cursor*/
+.form-notes a:hover{
+    color:#7c079f;
     text-decoration:underline;
 }
-/*container2*/
 
-.container2-first, .container2-second{
-    display:inline-block;
-    margin:0;
-    width:50%;
-    height:50%;
-    float:left;
-    background-color:#5e2482;
-    color:#fff;
-    box-sizing:border-box;
+/*código de container2*/
+/*padre: id="container2  hijos directos:class="container2-first/class="container2-second"*/
+/*para definir el degradado del background y pueda ser reconocido por los navegadores*/
+#container2{
+    width:100%;
+    background: -webkit-linear-gradient(#6d1f7e,#2b1e66); /*Safari*/
+    background: -o-linear-gradient(#6d1f7e,#2b1e66); /*Opera*/
+    background: -moz-linear-gradient(#6d1f7e,#2b1e66); /*Firefox*/
+    background: linear-gradient(#6d1f7e,#2b1e66); /* Standard syntax */
+    padding-top:4.2%;
+    padding-left:12%;
 }
+/*se usa la propiedad vertical-align para llevar el contenido hacia la parte superior*/
 .container2-first{
-    padding:8%;   
+    width:50%;
+    display:inline-block;
+    vertical-align:top;
+    color:#f3f3ee;  
+}
+
+.container2-first h3{
+    font-size: 1.75rem;
+    font-weight:500;
+}
+/*se usa line-height para definir la altura ocupada por cada línea de texto*/
+.container2-first p{
+    font-size: 1rem;
+    font-weight:300;
+    color:#f3f3f5;
+    width:70.5%;
+    line-height:160%;
+    padding-top:2%;
+    padding-bottom:9%;
 }
 
 .container2-second{
-    padding-top:8.7%;
-}
-.container2-second img{ 
-  max-width:80%;
-}
-
-.container2-first-item h3{
-    font-size:200%;
-}
-.container2-first p{
-    text-align:left;
-}
-
-.container2-first-item-h3{
-    line-height:1.5%;
-}
-
-
-/**/
-#container3{
-    clear:both;
-     box-sizing:border-box; 
-}
-.container3-content{
-    max-width:30%;
-  display:inline-block;
-  float:left;
-  text-align:center;
-  padding-top:7%;
-
-  
-}
-.container3-video{
-    max-width:70%;
+    width:40%;
     display:inline-block;
-     
-} 
+}
+/*a las imágenes se les dió max-width para que ocupen todo el espacio de su contenedor*/
+.container2-second img{
+    max-width:100%
+}
 
+/*código de container3*/
+/*padre: id="container3"  hijos directos: class="container3-content/class="container3-video"*/
+/*se usa  width:101% para que al darle display:inline-block puedan posicionarse los dos elementos uno
+al lado del otro, para tener 1% de diferencia*/
+#container3{
+    width:101%;
+    height:30rem;
+}
+/*al igual que en el código de container3, se usa vertical-align:top, por la misma razón, llevar el texto
+hacia la parte superior*/
+.container3-content{
+    display:inline-block;
+    width:33%;
+    vertical-align:top;
+    padding-top:1.5%;
+    padding-left:4%;
+    color:#333447;
+}
+
+.container3-video{
+    display:inline-block;
+    width:66%;
+}
+/*para que el vídeo ocupe todo el espacio de su contenedor se le dió el 100% del ancho y se le dió la misma altura
+que el padre*/
 .container3-video iframe{
-    width:1000px;
+    width:100%;
+    height:30rem;
+}
+/*se usó letter-spacing para definir el espaciado entre las letras de cada palabra*/
+#container3 a{
+    color: #ff00bf;
+    text-decoration: none;
+    text-transform:uppercase;
+    letter-spacing: 0.02rem;
+    font-size: 0.875rem;
+    font-weight:500;
+    line-height: 1.5rem;
+}
+
+#container3 h3{
+    font-size: 1.71rem;
+    font-weight:600;
+    width:70%;
+}
+
+#container3 p{
+    font-size: 1rem;
+    font-weight:300;
+    width:85%;
+    letter-spacing: 0.01rem;
+    line-height: 1.5rem;
+    padding-top:5%;
+}
+
+/*container4*/
+/*padre: id="container4"  hijos directos:class="container4-video/class="container4-content"*/
+/*al igual que en container3 se define el width en 101% para posicionar el vídeo y otro <div> uno al lado del otro.
+Tambén se define la altura*/
+#container4{
+    width:101%;
+    height:30rem;
+}
+
+.container4-video{
+    display:inline-block;
+    width:66%;
+}
+
+.container4-content{
+    display:inline-block;
+    width:33%;
+    vertical-align:top;
+    color:#333447;
+    padding-top:1.5%;
+    padding-left:4%;
+}
+/*igual se define el ancho para que ocupe el 100% de su contenedor y se le da la altura del contenedor padre*/
+.container4-video iframe{
+    width:100%;
+    height:30rem;
+}
+
+#container4 span{
+    font-size:0.9rem;
+    text-transform:uppercase;
+    font-weight:500;
+    letter-spacing:0.1rem;
+    line-height: 1.5rem;
+}
+
+#container4 h3{
+    font-size:1.71rem;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+#container4 p{
+    font-size: 1rem;
+    font-weight:300;
+    width:86%;
+    letter-spacing: 0.01rem;
+    line-height: 1.5rem;
+    padding-top:5%; 
 }
