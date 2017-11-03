@@ -14,7 +14,7 @@ nav {
     position: fixed;
     top: 0%;
     width: 100%;
-    z-index: 10000;
+    z-index: 1000;
     height: 20%;
    
 }
@@ -300,4 +300,177 @@ Tambén se define la altura*/
     letter-spacing: 0.01rem;
     line-height: 1.5rem;
     padding-top:5%; 
+}
+
+/******************section 4****************************************/
+
+.cont-section-3{
+    width: 100%;
+    height: 372px;
+    background-color: white;
+    color:#333447;
+    position:relative;    
+  }
+  
+.section-3-1{
+   /*   outline: 3px solid red;*/
+    width: 30%;
+    padding: 2.5%;
+    box-sizing: border-box;
+    text-align: justify;   
+ 
+  }
+  
+.section-3-1-h1{  
+   text-transform: uppercase;
+   line-height: 40px;
+   font-size: 29px;
+   box-sizing: border-box;  
+}
+
+.section-3-1-h3{
+  text-transform: uppercase;
+  font-size: 16px;      
+}
+
+.section-3-1-p p{
+    width: 320px;
+    font-size: 16px;
+    line-height: 25px;
+}
+  
+.section-3-2{    
+    position: absolute; 
+    top: 0%;
+    left: 40%;
+    width: 60%;
+       
+}
+
+
+
+.frame-video-1{
+    width: 100%;
+    height: 507px;      
+}
+
+/**************Style for footer****************************/
+
+
+.contenedor-footer {
+    background-color:#333447;
+    width: 100%;  
+    height: 300px; 
+    overflow: hidden;
+    margin-top:10%;
+    margin-left: auto;
+    margin-right: auto;       
+}
+
+.footer {
+    line-height: 33px;
+    list-style: none;
+    color:white;
+    float: left;
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 1%
+}
+
+.footer-img {
+    line-height: 33px;
+    list-style: none;
+    color: white;
+    float: left;
+    margin-left: 29%;
+    text-align: left;
+    margin-top: 1%
+}
+
+.name.footer{
+    text-align: center;
+}
+
+.list-footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+figure {
+    left: 50%;
+    display:block;
+}
+
+figure img{
+    width: 130px;
+}
+
+.foot-hipv{
+   text-decoration: none;
+   color: white;
+}
+
+.footer-hipv {
+    text-decoration: none;
+    color: white;
+}
+
+
+.foot-hipv:hover{
+    color: #EA0E89;
+    text-decoration: underline;
+}
+
+/**************footer2parte***********************/
+
+.contein-footer-2{
+    background-color:#333447;
+    width: 100%;
+    position: absolute;
+}
+
+.footer-2{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-footer-2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
+
+.list-footer-2 li {
+    display: inline-block;
+    margin: 2%;
+}
+
+
+.list-footer-2 li i {
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-left: 4px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-top: 11px;
+    padding-left: 2px;
+}
+
+.footer-finish{
+    text-align: center;
+
+}
+.footer-finish{
+    text-align: center;
+    color: white;
+}
+hr{
+    width: 600px;
 }
