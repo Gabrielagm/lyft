@@ -16,7 +16,6 @@ nav {
     width: 100%;
     z-index: 1000;
     height: 20%;
-   
 }
 
 .img-main {
@@ -65,7 +64,6 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     padding-top:10%;    
 }
 /*se posiciona .container1-form al lado derecho con position absolute, para lo cual se posiciona al padre con
@@ -163,13 +161,15 @@ característico*/
     background: linear-gradient(#6d1f7e,#2b1e66); /* Standard syntax */
     padding-top:4.2%;
     padding-left:12%;
+    padding-bottom:5%;
 }
 /*se usa la propiedad vertical-align para llevar el contenido hacia la parte superior*/
 .container2-first{
-    width:50%;
+    width:46%;
     display:inline-block;
     vertical-align:top;
-    color:#f3f3ee;  
+    color:#f3f3ee; 
+    padding-top:1rem; 
 }
 
 .container2-first h3{
@@ -181,7 +181,7 @@ característico*/
     font-size: 1rem;
     font-weight:300;
     color:#f3f3f5;
-    width:70.5%;
+    width:78%;
     line-height:160%;
     padding-top:2%;
     padding-bottom:9%;
@@ -189,11 +189,12 @@ característico*/
 
 .container2-second{
     width:40%;
-    display:inline-block;
+    height:28rem;
+    display:inline-block; 
 }
-/*a las imágenes se les dió max-width para que ocupen todo el espacio de su contenedor*/
+
 .container2-second img{
-    max-width:100%
+    width:90%;
 }
 
 /*código de container3*/
